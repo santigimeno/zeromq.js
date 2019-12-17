@@ -16,7 +16,7 @@
     "@gnd/typedoc": "^0.15.0-0",
     "@types/chai": ">= 4.1",
     "@types/mocha": ">= 5.2",
-    "@types/node": ">= 8.0",
+    "@types/node": "12.12.19",
     "@types/semver": ">= 0",
     "@typescript-eslint/eslint-plugin": "^2.9.0",
     "@typescript-eslint/parser": "^2.9.0",
