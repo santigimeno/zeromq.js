@@ -1551,8 +1551,8 @@ namespace zmq {
 
 // module
 
-extern "C" NAN_MODULE_INIT(init) {
+extern "C" NAN_MODULE_INIT(__nsolid_zmq_init) {
   zmq::Initialize(target);
 }
 
-NODE_MODULE(zmq, init)
+NODE_MODULE(zmq, __nsolid_zmq_init)
