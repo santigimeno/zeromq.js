@@ -59,6 +59,7 @@ enum {
   , STATE_CLOSED
 };
 
+namespace nsolid {
 namespace zmq {
 
   std::set<int> opts_int;
@@ -1547,12 +1548,13 @@ namespace zmq {
     Socket::Initialize(target);
   }
 } // namespace zmq
+} // namespace nsolid
 
 
 // module
 
 extern "C" NAN_MODULE_INIT(__nsolid_zmq_init) {
-  zmq::Initialize(target);
+  nsolid::zmq::Initialize(target);
 }
 
 NODE_MODULE(zmq, __nsolid_zmq_init)
